@@ -17,6 +17,10 @@ public class UserRepository {
         return user;
     }
 
+    public static List<User> getAllUsers() {
+        return userList;
+    }
+
     public User getUser() {
         User user = new User("Rickey", "123 Sesame Street", 33);
         return user;
