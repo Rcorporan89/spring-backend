@@ -37,4 +37,13 @@ public class UserRepository {
         }
         return null;
     }
+
+    public User getUserById(int userId) {
+        for(User user:userList) {
+            if (user.getUserId() == userId) {
+                return user;
+            }
+        }
+        return null;
+    }
 }

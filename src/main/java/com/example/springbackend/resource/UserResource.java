@@ -32,4 +32,9 @@ public class UserResource {
     public User updateUserById(@PathVariable("userId") int userId, @RequestBody User user) {
         return userService.updateUserById(userId,user);
     }
+
+    @GetMapping("/user/{userId}")
+    public User getUserById(@PathVariable("userId") int userId) {
+        return userService.getUserById(userId);
+    }
 }
