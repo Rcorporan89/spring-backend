@@ -37,4 +37,9 @@ public class UserResource {
     public User getUserById(@PathVariable("userId") int userId) {
         return userService.getUserById(userId);
     }
+
+    @DeleteMapping("/user")
+    public User deleteUser(@RequestParam(name="userId") int userId ) {
+        return userService.deleteUser(userId);
+    }
 }

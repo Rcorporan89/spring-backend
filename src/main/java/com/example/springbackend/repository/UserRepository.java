@@ -46,4 +46,18 @@ public class UserRepository {
         }
         return null;
     }
+
+    public User deleteUser(int userId) {
+        User deletedUser = null;
+        for (User user:userList ) {
+            if (user.getUserId() == userId) {
+            deletedUser = user;
+            userList.remove(user);
+            return deletedUser;
+            }
+
+            }
+        return null;
+
+    }
 }
