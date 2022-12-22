@@ -25,4 +25,16 @@ public class UserRepository {
         User user = new User("Rickey", "123 Sesame Street", 33);
         return user;
     }
+
+    public User updateUserById(int userId, User user) {
+        for(User u:userList) {
+            if(u.getUserId() == userId) {
+                u.setName(user.getName());
+                u.setAddress(user.getAddress());
+                u.setAge(user.getAge());
+                return u;
+            }
+        }
+        return null;
+    }
 }

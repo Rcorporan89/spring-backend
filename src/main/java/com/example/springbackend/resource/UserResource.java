@@ -14,7 +14,9 @@ public class UserResource {
     private UserService userService;
 
     @GetMapping("/user")
-    public User getUser(){return userService.getUser();}
+    public User getUser() {
+        return userService.getUser();
+    }
 
     @PostMapping("/user")
     public User saveUser(@RequestBody User user) {
@@ -26,6 +28,8 @@ public class UserResource {
         return UserService.getAllUsers();
     }
 
-
-
+    @PutMapping("/user/{userId}")
+    public User updateUserById(@PathVariable("userId") int userId, @RequestBody User user) {
+        return userService.updateUserById(userId,user);
+    }
 }

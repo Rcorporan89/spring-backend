@@ -23,4 +23,9 @@ public class UserService {
     public User getUser() {
         return userRepository.getUser();
     }
+
+
+    public User updateUserById(int userId, User user) {
+        return userRepository.updateUserById(userId, user);
+    }
 }
