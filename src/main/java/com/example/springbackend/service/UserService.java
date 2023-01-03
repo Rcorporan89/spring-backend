@@ -25,9 +25,9 @@ public class UserService {
 //    }
 //
 //
-//    public User updateUserById(int userId, User user) {
-//        return userRepository.updateUserById(userId, user);
-//    }
+    public User updateUserById(User user) {
+        return userRepository.save(user);
+    }
 //
 //    public User getUserById(int userId) {
 //        return userRepository.getUserById(userId);

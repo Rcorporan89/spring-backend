@@ -27,12 +27,12 @@ public class UserResource {
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
-//
-//    @PutMapping("/user/{userId}")
-//    public User updateUserById(@PathVariable("userId") int userId, @RequestBody User user) {
-//        return userService.updateUserById(userId,user);
-//    }
-//
+
+    @PutMapping
+    public User updateUserById(@RequestBody User user) {
+        return userService.updateUserById(user);
+    }
+
 //    @GetMapping("/user/{userId}")
 //    public User getUserById(@PathVariable("userId") int userId) {
 //        return userService.getUserById(userId);
