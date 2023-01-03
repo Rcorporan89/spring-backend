@@ -23,10 +23,10 @@ public class UserResource {
         return userService.saveUser(user);
     }
 
-//    @GetMapping("/users")
-//    public List<User> getUsers() {
-//        return UserService.getAllUsers();
-//    }
+    @GetMapping
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
+    }
 //
 //    @PutMapping("/user/{userId}")
 //    public User updateUserById(@PathVariable("userId") int userId, @RequestBody User user) {
