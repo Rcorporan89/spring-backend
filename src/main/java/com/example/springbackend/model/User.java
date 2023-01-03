@@ -1,7 +1,11 @@
 package com.example.springbackend.model;
 
+import org.springframework.data.annotation.Id;
+
 public class User {
-    private int userId;
+
+    @Id
+    private String userId;
     private String name;
     private String address;
     private int age;
@@ -12,11 +16,11 @@ public class User {
         this.age = age;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 

@@ -8,38 +8,38 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/users")
 public class UserResource {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/user")
-    public User getUser() {
-        return userService.getUser();
-    }
+//    @GetMapping
+//    public User getUser() {
+//        return userService.getUser();
+//    }
 
-    @PostMapping("/user")
+    @PostMapping
     public User saveUser(@RequestBody User user) {
-        return UserService.saveUser(user);
+        return userService.saveUser(user);
     }
 
-    @GetMapping("/users")
-    public List<User> getUsers() {
-        return UserService.getAllUsers();
-    }
-
-    @PutMapping("/user/{userId}")
-    public User updateUserById(@PathVariable("userId") int userId, @RequestBody User user) {
-        return userService.updateUserById(userId,user);
-    }
-
-    @GetMapping("/user/{userId}")
-    public User getUserById(@PathVariable("userId") int userId) {
-        return userService.getUserById(userId);
-    }
-
-    @DeleteMapping("/user")
-    public User deleteUser(@RequestParam(name="userId") int userId ) {
-        return userService.deleteUser(userId);
-    }
+//    @GetMapping("/users")
+//    public List<User> getUsers() {
+//        return UserService.getAllUsers();
+//    }
+//
+//    @PutMapping("/user/{userId}")
+//    public User updateUserById(@PathVariable("userId") int userId, @RequestBody User user) {
+//        return userService.updateUserById(userId,user);
+//    }
+//
+//    @GetMapping("/user/{userId}")
+//    public User getUserById(@PathVariable("userId") int userId) {
+//        return userService.getUserById(userId);
+//    }
+//
+//    @DeleteMapping("/user")
+//    public User deleteUser(@RequestParam(name="userId") int userId ) {
+//        return userService.deleteUser(userId);
+//    }
 }
