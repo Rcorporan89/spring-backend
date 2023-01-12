@@ -36,6 +36,10 @@ public class UserService {
     public List <User> getByAddress(String address) {
        return userRepository.findAllByAddress(address);
     }
+
+    public User getUserById(String userId) {
+        return userRepository.findById(userId).get();
+    }
 //
 //    public User getUserById(int userId) {
 //        return userRepository.getUserById(userId);

@@ -40,13 +40,13 @@ public class UserResource {
 
     @GetMapping("/find")
     public List <User> getByAddress(@RequestParam(name="address") String address){
-        return userService.getByAddress(address);
+        return  userService.getByAddress(address);
     }
 
-//    @GetMapping("/user/{userId}")
-//    public User getUserById(@PathVariable("userId") int userId) {
-//        return userService.getUserById(userId);
-//    }
-//
+    @GetMapping("/find-by-id")
+    public User getUserById(@RequestParam("userId") String userId) {
+        return userService.getUserById(userId);
+    }
+
 
 }
