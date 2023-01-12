@@ -38,6 +38,11 @@ public class UserResource {
          userService.deleteUser(userId);
     }
 
+    @GetMapping("/find")
+    public List <User> getByAddress(@RequestParam(name="address") String address){
+        return userService.getByAddress(address);
+    }
+
 //    @GetMapping("/user/{userId}")
 //    public User getUserById(@PathVariable("userId") int userId) {
 //        return userService.getUserById(userId);

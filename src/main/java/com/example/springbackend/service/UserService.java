@@ -32,6 +32,10 @@ public class UserService {
     public void deleteUser(String userId) {
         userRepository.deleteById(userId);
     }
+
+    public List <User> getByAddress(String address) {
+       return userRepository.findAllByAddress(address);
+    }
 //
 //    public User getUserById(int userId) {
 //        return userRepository.getUserById(userId);
