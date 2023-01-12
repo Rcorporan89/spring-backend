@@ -33,13 +33,15 @@ public class UserResource {
         return userService.updateUserById(user);
     }
 
+    @DeleteMapping
+    public void deleteUser(@RequestParam(name="userId") String userId ) {
+         userService.deleteUser(userId);
+    }
+
 //    @GetMapping("/user/{userId}")
 //    public User getUserById(@PathVariable("userId") int userId) {
 //        return userService.getUserById(userId);
 //    }
 //
-//    @DeleteMapping("/user")
-//    public User deleteUser(@RequestParam(name="userId") int userId ) {
-//        return userService.deleteUser(userId);
-//    }
+
 }

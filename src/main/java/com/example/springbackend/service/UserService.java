@@ -28,6 +28,10 @@ public class UserService {
     public User updateUserById(User user) {
         return userRepository.save(user);
     }
+
+    public void deleteUser(String userId) {
+        userRepository.deleteById(userId);
+    }
 //
 //    public User getUserById(int userId) {
 //        return userRepository.getUserById(userId);
