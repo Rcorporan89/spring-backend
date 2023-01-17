@@ -1,5 +1,6 @@
 package com.example.springbackend.resource;
 
+import com.example.springbackend.exception.RestrictedInfoException;
 import com.example.springbackend.model.User;
 import com.example.springbackend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,8 +41,16 @@ public class UserResource {
     }
 
     @GetMapping("/find")
-    public List <User> getByAddress(@RequestParam(name="address") String address){
+    public List <User> getByAddress(@RequestParam(name="address") String address) throws RestrictedInfoException {
+        if (address.equalsIgnoreCase("area51")){
+            throw new RestrictedInfoException();
+        }
         return  userService.getByAddress(address);
+    }
+
+    @ExceptionHandler(RestrictedInfoException.class)
+    public String restrictedInfoError(RestrictedInfoException ex) {
+        return ex.getMessage();
     }
 
     @GetMapping("/find-by-id")
