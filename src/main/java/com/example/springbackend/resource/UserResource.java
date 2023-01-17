@@ -3,6 +3,7 @@ package com.example.springbackend.resource;
 import com.example.springbackend.exception.RestrictedInfoException;
 import com.example.springbackend.model.User;
 import com.example.springbackend.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class UserResource {
 //    }
 
     @PostMapping
-    public User saveUser(@RequestBody User user) {
+    public User saveUser(@RequestBody @Valid User user) {
         return userService.saveUser(user);
     }
 
