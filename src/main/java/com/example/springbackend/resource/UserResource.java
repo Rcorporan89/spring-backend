@@ -51,20 +51,14 @@ public class UserResource {
     }
 
 
-    @ExceptionHandler(RestrictedInfoException.class)
-    public ResponseEntity <String> restrictedInfoError(RestrictedInfoException ex) {
-        return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
-    }
+
 
     @GetMapping("/find-by-id")
     public User getUserById(@RequestParam("userId") String userId) {
         return userService.getUserById(userId);
     }
 
-    @ExceptionHandler(NoSuchElementException.class)
-    public ResponseEntity<String> noSuchElementError(){
-        return new ResponseEntity<>("No Such Element Found",HttpStatus.CONFLICT);
-    }
+
 
 
 }
