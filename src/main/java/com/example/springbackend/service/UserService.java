@@ -19,12 +19,7 @@ public class UserService {
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
-//
-//    public User getUser() {
-//        return userRepository.getUser();
-//    }
-//
-//
+
     public User updateUserById(User user) {
         return userRepository.save(user);
     }
@@ -40,12 +35,5 @@ public class UserService {
     public User getUserById(String userId) {
         return userRepository.findById(userId).get();
     }
-//
-//    public User getUserById(int userId) {
-//        return userRepository.getUserById(userId);
-//    }
-//
-//    public User deleteUser(int userId) {
-//        return userRepository.deleteUser(userId);
-//    }
+
 }

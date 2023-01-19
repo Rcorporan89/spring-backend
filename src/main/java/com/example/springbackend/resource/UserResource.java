@@ -18,11 +18,6 @@ public class UserResource {
     @Autowired
     private UserService userService;
 
-//    @GetMapping
-//    public User getUser() {
-//        return userService.getUser();
-//    }
-
     @PostMapping
     public User saveUser(@RequestBody @Valid User user) {
         return userService.saveUser(user);
