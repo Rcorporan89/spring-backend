@@ -1,6 +1,7 @@
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/exception/RestrictedInfoException.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/ServletInitializer.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/SpringBackendApplication.java
+/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/exception/GlobalExceptionHandler.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/model/User.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/resource/UserResource.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/repository/UserRepository.java

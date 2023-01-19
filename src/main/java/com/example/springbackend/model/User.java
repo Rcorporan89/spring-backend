@@ -1,5 +1,6 @@
 package com.example.springbackend.model;
 
+import com.example.springbackend.validation.ValidName;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
@@ -10,9 +11,9 @@ public class User {
 
     @Id
     private String userId;
-    @NotEmpty
+    @NotEmpty @ValidName
     private String name;
-    @Length(max = 20)
+    @Length(max = 20) @NotEmpty
     private String address;
     @Min(13) @Max(100)
     private int age;
