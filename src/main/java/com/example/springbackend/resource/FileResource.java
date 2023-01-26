@@ -39,4 +39,9 @@ public class FileResource {
                 .header(Headers.CONTENT_DISPOSITION,"attachment; filename=\"" + key + "\"")
                 .body(new ByteArrayResource(object.getObjectContent().readAllBytes()));
     }
+
+    @DeleteMapping("/delete")
+    public void delete(@RequestParam(name = "key")String key) {
+        fileService.deleteFile(key);
+    }
 }
