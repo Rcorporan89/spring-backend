@@ -4,7 +4,9 @@ com/example/springbackend/exception/RestrictedInfoException.class
 com/example/springbackend/repository/UserRepository.class
 com/example/springbackend/service/UserService.class
 com/example/springbackend/exception/GlobalExceptionHandler.class
+com/example/springbackend/model/FirebaseUser.class
 com/example/springbackend/SpringBackendApplication.class
 com/example/springbackend/model/User.class
+com/example/springbackend/service/FirebaseService.class
 com/example/springbackend/ServletInitializer.class
 com/example/springbackend/resource/UserResource.class

@@ -19,7 +19,7 @@ public class FirebaseService {
         FileInputStream serviceAccount = new FileInputStream(resource.getFile());
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                .setDatabaseUrl("https://backend-winter23.firebaseio.com")
+                .setDatabaseUrl("https://backend-winter-23.firebaseio.com")
                 .build();
         return FirebaseApp.initializeApp(options);
     }
