@@ -1,12 +1,14 @@
-/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/exception/RestrictedInfoException.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/ServletInitializer.java
+/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/service/FileService.java
+/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/repository/UserRepository.java
+/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/model/FirebaseUser.java
+/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/exception/RestrictedInfoException.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/SpringBackendApplication.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/resource/FileResource.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/exception/GlobalExceptionHandler.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/model/User.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/resource/UserResource.java
-/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/service/FileService.java
-/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/repository/UserRepository.java
+/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/service/FirebaseService.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/service/UserService.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/validation/ValidNameValidator.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/validation/ValidName.java

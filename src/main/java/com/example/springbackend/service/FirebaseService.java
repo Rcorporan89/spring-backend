@@ -15,7 +15,7 @@ import java.io.IOException;
 public class FirebaseService {
     public FirebaseApp initializeFirebase() throws IOException {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        Resource resource = resolver.getResource("classpath:backend-winter23-firebase.json");
+        Resource resource = resolver.getResource("classpath:backend-winter-23.json");
         FileInputStream serviceAccount = new FileInputStream(resource.getFile());
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
@@ -26,9 +26,9 @@ public class FirebaseService {
 
     public FirebaseUser authenticate(String idToken) throws IOException, FirebaseAuthException {
 
-        String uid = FirebaseAuth.getInstance(initializeFirebase()).verifyIdToken(idToken).getUid();
-        String name = FirebaseAuth.getInstance(initializeFirebase()).verifyIdToken(idToken).getName();
-        String email = FirebaseAuth.getInstance(initializeFirebase()).verifyIdToken(idToken).getEmail();
+        String uid = FirebaseAuth.getInstance().verifyIdToken(idToken).getUid();
+        String name = FirebaseAuth.getInstance().verifyIdToken(idToken).getName();
+        String email = FirebaseAuth.getInstance().verifyIdToken(idToken).getEmail();
 
         return new FirebaseUser(uid, name, email);
     }
