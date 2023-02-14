@@ -1,3 +1,4 @@
 **/.DS_Store
 src/main/resources/backend-winter-23.json
 spring-backend/src/main/resources/backend-winter-23.json
+target/classes/backend-winter-23.json

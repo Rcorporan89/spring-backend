@@ -1,3 +1,4 @@
+com/example/springbackend/config/FirebaseConfig.class
 com/example/springbackend/service/FileService.class
 com/example/springbackend/resource/FileResource.class
 com/example/springbackend/exception/RestrictedInfoException.class
