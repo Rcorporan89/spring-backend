@@ -8,6 +8,7 @@
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/exception/GlobalExceptionHandler.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/model/User.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/resource/UserResource.java
+/Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/config/FirebaseConfig.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/service/FirebaseService.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/service/UserService.java
 /Users/rickeycorporan/Desktop/spring-backend/src/main/java/com/example/springbackend/validation/ValidNameValidator.java
